@@ -35,6 +35,10 @@ function render(variables = {}) {
   if (variables.city === null) variables.city = "City";
   if (variables.country === null) variables.country = "Country";
   let position = variables.socialMediaPosition;
+  if (variables.twitter === null) variables.twitter = "Twitter";
+  if (variables.github) variables.github = "Github";
+  if (variables.linkedin === null) variables.linkedin = "Linkedin";
+  if (variables.instagram === null) variables.instagram = "Instagram";
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
